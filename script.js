@@ -5,14 +5,14 @@
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
         style: 'mapbox://styles/jaguerrac2002/cm1ikbpnh01m701pchm7x7xn6',
         zoom: 16.5,
-        center: [-73.430379, 5.451004],
+        center: [-74.07786718313484, 4.645914883620803],
         pitch: 30,
         antialias: true // create the gl context with MSAA antialiasing, so custom layers are antialiased
     });
 
     // parameters to ensure the model is georeferenced correctly on the map
-    const modelOrigin = [-73.430379, 5.451004];
-    const modelAltitude = 2710;
+    const modelOrigin = [-74.07786718313484, 4.645914883620803];
+    const modelAltitude = 0;
     const modelRotate = [Math.PI / 2, 0, 0];
 
     const modelAsMercatorCoordinate = mapboxgl.MercatorCoordinate.fromLngLat(
@@ -96,9 +96,9 @@
                 )
                 .scale(
                     new THREE.Vector3(
-                        modelTransform.scale * 10,
-                        -modelTransform.scale * 10,
-                        modelTransform.scale * 10
+                        modelTransform.scale * 100,
+                        -modelTransform.scale * 100,
+                        modelTransform.scale * 100
                     )
                 )
                 .multiply(rotationX)
