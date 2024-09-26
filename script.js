@@ -1,9 +1,9 @@
 
-	mapboxgl.accessToken = 'pk.eyJ1IjoiamNhcnJveW9zLXRlYWNoaW5nIiwiYSI6ImNsd21jMXd6NDBvbWsyanJpNTNnOTI5eHAifQ.P30PvmCHYGYABjc-tb4aQA';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamFndWVycmFjMjAwMiIsImEiOiJjbTFpazE0bXcwcHRrMm5wb3RmdHY3Ym94In0.DB6Q5Vql1sPwR7Eh4fc82g';
     const map = new mapboxgl.Map({
         container: 'map',
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: 'mapbox://styles/jcarroyos-teaching/clwmd0t66040p01nx4zu72443',
+        style: 'mapbox://styles/jaguerrac2002/cm1ikbpnh01m701pchm7x7xn6',
         zoom: 16.5,
         center: [-73.430379, 5.451004],
         pitch: 30,
@@ -96,9 +96,9 @@
                 )
                 .scale(
                     new THREE.Vector3(
-                        modelTransform.scale,
-                        -modelTransform.scale,
-                        modelTransform.scale
+                        modelTransform.scale * 10,
+                        -modelTransform.scale * 10,
+                        modelTransform.scale * 10
                     )
                 )
                 .multiply(rotationX)
